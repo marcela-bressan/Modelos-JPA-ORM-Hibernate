@@ -34,6 +34,8 @@ public class NovoUsuario {
 		em.persist(novoUsuario5);
 		em.persist(novoUsuario6);
 		
+		System.out.println(novoUsuario.getId());
+		
 		//Gravar
 		em.getTransaction().commit();
 		
