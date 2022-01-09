@@ -7,11 +7,7 @@ import javax.persistence.Id;
 
 @Entity
 public class Usuario {
-	//JPA - ORM - HIBERNATE
-	
-	
 	@Id
-	//auto-increment
 	@GeneratedValue (strategy = GenerationType.IDENTITY)
 	private Long id;
 	
@@ -19,7 +15,7 @@ public class Usuario {
 	
 	private String email;
 	
-	//Transient (Quando não for usar no BD)
+	//Transient (Quando não quiser incluir na tabela)
 	
 	Usuario(){
 		
